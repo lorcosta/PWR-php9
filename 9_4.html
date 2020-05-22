@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>PHP 9_4</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lorenzo Costa" >
+    <link rel=stylesheet href=fogliodistile.css>
+    <script type="text/javascript">
+    "use strict";
+      function controllo(numero){
+        var regexp=/^(\+|-)\d{1,3}\.\d{1}$/
+        var numero=document.getElementById(numero).value
+        if(!regexp.test(numero)){
+          window.alert("Attenzione! La temperatura non rispetta la richiesta")
+          return
+        }
+       }
+    </script>
+  </head>
+  <body>
+      <h1>Pagina realizzata con PHP</h1>
+      <p>Autore della pagina: Lorenzo Costa</p>
+      <p>Inserisci una temperatura preceduta dal segno + o - che abbia al massimo 3 cifre e una sola cifra dopo il punto</p>
+      <form id="form" action="9_4.php" method="post" onsubmit="controllo('temp')">
+        <input type="text" name="temp" id="temp" onchange="controllo('temp')">
+        <input type="submit" name="submit" value="Invia">
+        <input type="reset" name="reset" value="Cancella">
+      </form>
+  </body>
+</html>

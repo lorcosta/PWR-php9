@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>PHP 9_5</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lorenzo Costa" >
+    <link rel=stylesheet href=fogliodistile.css>
+    <script type="text/javascript">
+    "use strict";
+      function controllo(numero){
+        var regexp=/^(\+|-)\d{1,3}\.\d{1}$/
+        var numero=document.getElementById(numero).value
+        if(!regexp.test(numero)){
+          window.alert("Attenzione! La temperatura non rispetta la richiesta")
+          return
+        }
+       }
+    </script>
+  </head>
+  <body>
+      <h1>Pagina realizzata con PHP</h1>
+      <p>Autore della pagina: Lorenzo Costa</p>
+      <form id="form" action="9_5.php" method="get">
+        <textarea id="area" name="area" rows="8" cols="80" placeholder="Inserisci qui il tuo testo"></textarea>
+        <input type="submit" name="submit" value="Invia">
+        <input type="reset" name="reset" value="Cancella">
+      </form>
+  </body>
+</html>
