@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>PHP 9_7</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lorenzo Costa" >
+    <link rel=stylesheet href=fogliodistile.css>
+    <script type="text/javascript">
+    "use strict";
+
+    </script>
+  </head>
+  <body>
+      <h1>Pagina realizzata con PHP</h1>
+      <p>Autore della pagina: Lorenzo Costa</p>
+      <ul>
+        <li>Il nome e il cognome devono iniziare con una lettera maiuscola e contenere al massimo 30 tra caratteri alfabetici e spazi.</li>
+        <li>Lo username deve contenere minimo 6 e massimo 20 caratteri alfanumerici compresi il '+', il '.', il '-'.</li>
+        <li>La password deve contenere minimo 8 e massimo 16 caratteri alfanumerici tra i quali sono obbligatorie una lettera maiuscola, una minuscola e due numeri</li>
+        <li>L'email deve essere una email valida</li>
+      </ul>
+      <form id="form" action="9_7.php" method="get">
+        <input type="text" id="nome" name="nome" placeholder="Inserisci nome">
+        <input type="text" id="cognome" name="cognome" placeholder="Inserisci cognome">
+        <input type="text" id="username" name="username" placeholder="Inserisci username">
+        <input type="password" id="password" name="password" placeholder="Inserisci password">
+        <input type="email" id="email" name="email" placeholder="Inserisci e-mail">
+        <input type="submit" name="submit" value="Invia">
+        <input type="reset" name="reset" value="Cancella">
+      </form>
+  </body>
+</html>
