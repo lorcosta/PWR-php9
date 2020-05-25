@@ -26,7 +26,7 @@
         $email=$_REQUEST['email'];
         $regexpNomeCognome="/^[A-Z]{1}[a-z]{1,}[\s]*$/";#controlla che la prima lettera sia maiuscola e accetta lettere e spazi
         $regexpUsername="/^[\w\.\+\-]{6,20}$/";
-        $regexpPassword="/^[\w]{4,14}[0-9]{2}$/";
+        $regexpPassword="/^[a-zA-Z0-9]{8,16}$/";
         $regexpMaiuscolo="/[A-Z]/";
         $regexpMinuscolo="/[a-z]/";
         if(strlen($nome)>30 || !preg_match($regexpNomeCognome,$nome)){
