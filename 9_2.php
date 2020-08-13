@@ -10,7 +10,7 @@
       <?php
         echo("<p>Benvenuto!</p>");
         echo "<p>Qui sul server sono le ".date("H:i:s")." del ".date("d/m/Y")."</p>";
-
+        echo '<p>'.date("Y/m/d H:i:s").'</p>';
       ?>
       <script>
       "use strict";
