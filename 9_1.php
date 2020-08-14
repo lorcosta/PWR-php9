@@ -19,6 +19,9 @@
         $IP_server=$_SERVER['SERVER_ADDR'];
         $porta_server=$_SERVER['SERVER_PORT'];
         echo "<p>Sei collegato al server $nome_server (indirizzo IP $IP_server e porta $porta_server/TCP)</p>";
+        foreach ($_SERVER as $key => $value) {
+          echo '<p>'.$key.'-->'.$value.'</p>';
+        }
         ?>
   </body>
 </html>
